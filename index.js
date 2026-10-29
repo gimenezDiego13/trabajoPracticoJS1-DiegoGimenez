@@ -1,3 +1,8 @@
-//3.- Escribe un programa de una sola línea que escriba en la pantalla el resultado de sumar 3 + 5.
-let suma = 3 + 5;
-document.write(suma);
+//4.- Escribe un programa de dos líneas que pida el nombre del usuario con un prompt y escriba un texto que diga «Hola nombreUsuario»
+//Ejemplo:
+
+//input: Coder
+//Output: Hola Coder
+
+let nombreUsuario = prompt("Ingresa tu nombre para ver que es lo que pasa💀")
+document.write("Hola " + nombreUsuario)
