@@ -1,26 +1,20 @@
 /*
-
-
 Dificultad:  🟢
-7.- Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres.
+8.- Escribe un programa que pida un número y diga si es divisible por 2
 Ejemplo: 
 
-input: 15 , 3, 9
-
-
-Output: El 15 es el número más grande
+input: 10
+input: 15
+Output: El 10 es divisible por 2.
+Output: El 15 no es divisible por 2.
  */
 
-let num1 = parseInt(prompt("Ingresa el primer número"));
-let num2 = parseInt(prompt("Ingresa el segundo número"));
-let num3 = parseInt(prompt("Ingresa el tercer número"));
+let numDivisible = parseInt(
+  prompt("Ingresa un número para ver si es divisible en 2"),
+);
 
-if (num1 > num2 && num1 > num3) {
-  document.write("El número " + num1 + " es mayor que " + num2 + " y " + num3);
-} else if (num2 > num1 && num2 > num3) {
-  document.write("El número " + num2 + " es mayor que " + num1 + " y " + num3);
-} else if (num3 > num1 && num3 > num1) {
-  document.write("El número " + num3 + " es mayor que " + num1 + " y " + num2);
+if (numDivisible % 2 === 0) {
+  document.write("El número " + numDivisible + " si es divisible en 2");
 } else {
-  document.write("Hiciste algo mal, recarga la página");
+  document.write("El número " + numDivisible + " no es divisible en 2");
 }
